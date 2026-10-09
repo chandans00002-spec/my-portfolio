@@ -1,0 +1,717 @@
+/* =========================
+   GENERAL PAGE
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #222222;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #111827;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 70px 10%;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: white;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #555555;
+    font-weight: bold;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+#home h1 span {
+    color: #2563eb;
+}
+
+#home h2 {
+    font-size: 28px;
+    color: #444444;
+}
+
+#typing-text {
+    color: #2563eb;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+
+/* =========================
+   HOME BUTTONS
+========================= */
+
+.home-buttons {
+    margin-top: 30px;
+}
+
+.home-buttons a {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 8px;
+    background-color: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-buttons a:hover {
+    background-color: #2563eb;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills {
+    background-color: #f5f7fa;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.skill-card p {
+    color: #555555;
+    line-height: 1.6;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+#experience {
+    background-color: white;
+}
+
+.experience-card {
+    max-width: 850px;
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.experience-header h3 {
+    font-size: 25px;
+    margin: 0 0 8px 0;
+}
+
+.experience-header h4 {
+    font-size: 18px;
+    color: #555555;
+    margin: 0;
+}
+
+.experience-header p {
+    color: #555555;
+    font-weight: bold;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+}
+
+.experience-card li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects {
+    background-color: #f5f7fa;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-top: 0;
+    color: #111827;
+}
+
+.project-card p {
+    color: #555555;
+    line-height: 1.6;
+}
+
+.tech {
+    margin-top: 20px;
+}
+
+.tech span {
+    display: inline-block;
+    background-color: #eef2ff;
+    color: #2563eb;
+    padding: 6px 10px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+#education {
+    background-color: white;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.education-card {
+    background-color: #f5f7fa;
+    width: 320px;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-card h3 {
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.education-card h4 {
+    font-size: 17px;
+    color: #2563eb;
+}
+
+.education-card p {
+    color: #555555;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-container a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: white;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-container a:hover {
+    background-color: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   DARK MODE BUTTON
+========================= */
+
+#darkModeBtn {
+    margin-left: 20px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #111827;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#darkModeBtn:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background-color: #111827;
+    color: white;
+}
+
+body.dark-mode #home {
+    background-color: #1f2937;
+}
+
+body.dark-mode #home h2 {
+    color: #d1d5db;
+}
+
+body.dark-mode #skills {
+    background-color: #111827;
+}
+
+body.dark-mode .skill-card {
+    background-color: #1f2937;
+    color: white;
+}
+
+body.dark-mode .skill-card h3 {
+    color: white;
+}
+
+body.dark-mode .skill-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode #experience {
+    background-color: #111827;
+}
+
+body.dark-mode .experience-card {
+    background-color: #1f2937;
+}
+
+body.dark-mode .experience-header h4 {
+    color: #60a5fa;
+}
+
+body.dark-mode .experience-header p {
+    color: #d1d5db;
+}
+
+body.dark-mode .experience-card li {
+    color: #d1d5db;
+}
+
+body.dark-mode #projects {
+    background-color: #111827;
+}
+
+body.dark-mode .project-card {
+    background-color: #1f2937;
+}
+
+body.dark-mode .project-card h3 {
+    color: white;
+}
+
+body.dark-mode .project-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode #education {
+    background-color: #111827;
+}
+
+body.dark-mode .education-card {
+    background-color: #1f2937;
+}
+
+body.dark-mode .education-card h3 {
+    color: white;
+}
+
+body.dark-mode .education-card h4 {
+    color: #60a5fa;
+}
+
+body.dark-mode .education-card p {
+    color: #d1d5db;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    nav h2 {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        margin: 5px 8px;
+        font-size: 14px;
+    }
+
+    #darkModeBtn {
+        margin: 8px;
+    }
+
+
+    /* Home */
+
+    #home {
+        padding: 80px 20px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #home h2 {
+        font-size: 23px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+
+    /* Sections */
+
+    section {
+        padding: 50px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+
+    /* Skills */
+
+    .skills-container {
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* Experience */
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-header p {
+        margin-top: 10px;
+    }
+
+
+    /* Projects */
+
+    .projects-container {
+        justify-content: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* Education */
+
+    .education-container {
+        justify-content: center;
+    }
+
+    .education-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container a {
+        width: 200px;
+    }
+
+}
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    background-color: white;
+}
+
+.about-container {
+    max-width: 850px;
+}
+
+.about-text {
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 18px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ABOUT DARK MODE */
+
+body.dark-mode #about {
+    background-color: #111827;
+}
+
+body.dark-mode .about-text {
+    background-color: #1f2937;
+}
+
+body.dark-mode .about-text p {
+    color: #d1d5db;
+}
+/* =========================
+   RESUME BUTTON
+========================= */
+
+.home-buttons a:last-child {
+    background-color: #2563eb;
+}
+
+.home-buttons a:last-child:hover {
+    background-color: #111827;
+}
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #0b1120;
+    color: #d1d5db;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+/* MOBILE NAVIGATION IMPROVEMENTS */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin: 4px;
+        padding: 5px;
+    }
+
+    #darkModeBtn {
+        margin: 8px;
+    }
+
+}
